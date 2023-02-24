@@ -1,9 +1,9 @@
 package com.example.example;
 
-import com.example.schemas.v1.Person;
+import com.example.schemas.v1.PersonOuterClass;
 
 public class Example {
-    public static Person makePerson() {
-        return Person.builder().withName("Joe").build();
+    public static PersonOuterClass.Person makePerson() {
+        return PersonOuterClass.Person.builder().withName("Joe").build();
     }
 }

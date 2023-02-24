@@ -1,3 +1,3 @@
 java_sources(
-    dependencies=["schemas/schemas/v1:protos"]
+    dependencies=["schemas/com/example/schemas/v1:java_lib"]
 )
