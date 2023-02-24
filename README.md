@@ -26,3 +26,17 @@ ClasspathSourceMissing: No JVM classpath providers (from: CompileJavaSourceReque
 ```
 
 Separately, in both cases, we cannot import the package in `/schemas` from another root, but I assume this is me doing something wrong.
+
+Another oddity is that with both codegen backends, when we do `./pants export-codegen ::`, only the Java is exported:
+```
+❯ tree dist/codegen
+dist/codegen
+└── schemas
+    └── com
+        └── example
+            └── schemas
+                └── v1
+                    └── PersonOuterClass.java
+
+5 directories, 1 file
+```
