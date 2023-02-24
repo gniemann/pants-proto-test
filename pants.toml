@@ -1,0 +1,24 @@
+# GLOBAL CONFIGURATION OF PANTS
+[GLOBAL]
+pants_version = "2.15.0rc6"
+level="info"
+
+backend_packages = [
+    "pants.backend.python",
+    "pants.backend.codegen.protobuf.python",
+    "pants.backend.experimental.java",
+    "pants.backend.experimental.codegen.protobuf.java",
+]
+
+[repl]
+shell = "ipython"
+
+[dependencies]
+transitive = true
+
+[source]
+root_patterns = [
+    '/schemas',
+    '/3rdparty',
+    '/jvm',
+]
